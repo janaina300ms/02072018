@@ -1,0 +1,105 @@
+nome: janaina menezes
+
+
+Por favor, responda às perguntas a seguir da melhor forma possível, sem recorrer à
+para bibliotecas padrão ou código externo.
+
+Questão 1:
+Como você encontra o elemento no meio de uma lista unida? Propor um
+solução usando qualquer linguagem de programação de seu conhecimento. Importante: faça
+não use bibliotecas padrão.
+
+
+import java.util.ArrayList;
+import java.util.List;
+ 
+public class Teste {
+
+    public static void main(String[] args) {
+
+        boolean diferente = true;
+        List<Integer> diferentes = new ArrayList<Integer>();
+        Integer aux = 0;
+        Integer aux2 = 0;
+        List<Integer> lista1 = new ArrayList<Integer>();
+        l1.add(1);
+        l1.add(2);
+        l1.add(3);
+        l1.add(4);
+        l1.add(9);
+        l1.add(5);
+        List<Integer> lista2 = new ArrayList<Integer>();
+        l2.add(2);
+        l2.add(3);
+        l2.add(4);
+        l2.add(5);
+        l2.add(7);
+        for (int i = 0; i < lista1.size(); i++) {
+            aux = lista1.get(i);
+             
+            if(lista1.contains(aux)){
+                System.out.println("Existe na lista 1 - " + aux);
+            }
+            //se quiser comparar se existe na lista 2
+            if(lista2.contains(aux)){
+                System.out.println("Existe na lista 2 - " + aux);
+            }else{
+                diferentes.add(aux);
+            }
+             
+        }
+        System.out.println("os valores diferentes entre as listas são = " + diferente);
+ 
+    }
+ 
+}
+
+
+
+
+Questão 2:
+A empresa Enterprise Systems LLC possui um sistema legado desenvolvido há 5 anos
+atrás, e muitos clientes estão usando. Ultimamente, os stakeholders saíram com um
+todo novo conjunto de recursos para o produto, a fim de abrir um novo mercado
+ramo. Os engenheiros de software avaliaram o software legado e concluíram
+que é excessivamente acoplado (código maccarrônico). Na sua opinião, qual é o
+melhor estratégia: renovar o software ou evoluir o código legado? Elaborar
+
+resposta: 
+
+renovar o código. se fosse evoluir e fazer possíveis manutenções em um código fortemente acoplado,
+o problema persistiria é não haveria uma melhora esperada. renovar ou melhorar um código gera um
+de manutenção e melhorias elevado o que pode ser evitado escrevendo um novo código seguindo algumas
+boas práticas.  
+
+
+Questão 3:
+Há um conjunto de trabalhos enviados para uma máquina ao longo dos dias, cada um com diferentes
+Tempos de processamento. Suponha que os intervalos de processamento sejam [i, j), onde i e j
+correspondem a milissegundos. Dada uma longa lista de intervalos de processamento de trabalho, como
+isso, o gerente quer saber qual é o horário de pico. Propor o melhor
+solução você pode para o problema.
+
+
+
+Questão 4:
+Usando qualquer idioma de sua escolha, proponha uma função que corresponda a um padrão
+e uma entrada. O padrão é composto por caracteres alfanuméricos (o que significa
+simples comparação com a entrada), o "." significa que qualquer caractere
+entrada é permitida na posição, e "*" significa qualquer repetição da anterior
+personagem é permitido, incluindo nenhum. Os seguintes casos de teste devem passar:
+
+
+assert match('a', 'a') == True
+assert match('a', 'a*') == True
+assert match('', 'a*') == True
+assert match('', 'a*a') == False
+assert match('a', '.') == True
+assert match('a', '.*') == True
+assert match('ab', 'a*b*') == True
+assert match('ab', 'a*.*b') == True
+assert match('ab', 'a*c') == False
+
+
+
+
